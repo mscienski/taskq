@@ -1,10 +1,10 @@
-module github.com/vmihailenco/taskq/example/redisexample
+module github.com/mscienski/taskq/example/redisexample
 
 go 1.17
 
 require (
 	github.com/go-redis/redis/v8 v8.11.5
-	github.com/vmihailenco/taskq/v3 v3.2.9
+	github.com/mscienski/taskq/v3 v3.2.9
 )
 
 require (
@@ -21,4 +21,4 @@ require (
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 )
 
-replace github.com/vmihailenco/taskq/v3 => ../..
+replace github.com/mscienski/taskq/v3 => ../..

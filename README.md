@@ -1,7 +1,7 @@
 # Golang asynchronous task/job queue with Redis, SQS, IronMQ, and in-memory backends
 
-![build workflow](https://github.com/vmihailenco/taskq/actions/workflows/build.yml/badge.svg)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/vmihailenco/taskq/v3)](https://pkg.go.dev/github.com/vmihailenco/taskq/v3)
+![build workflow](https://github.com/mscienski/taskq/actions/workflows/build.yml/badge.svg)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/mscienski/taskq/v3)](https://pkg.go.dev/github.com/mscienski/taskq/v3)
 [![Documentation](https://img.shields.io/badge/bun-documentation-informational)](https://taskq.uptrace.dev/)
 [![Chat](https://discordapp.com/api/guilds/752070105847955518/widget.png)](https://discord.gg/rWtp5Aj)
 
@@ -26,10 +26,10 @@
 Resources:
 
 - [**Get started**](https://taskq.uptrace.dev/guide/golang-task-queue.html)
-- [Examples](https://github.com/vmihailenco/taskq/tree/v3/example)
+- [Examples](https://github.com/mscienski/taskq/tree/v3/example)
 - [Discussions](https://github.com/uptrace/bun/discussions)
 - [Chat](https://discord.gg/rWtp5Aj)
-- [Reference](https://pkg.go.dev/github.com/vmihailenco/taskq/v3)
+- [Reference](https://pkg.go.dev/github.com/mscienski/taskq/v3)
 
 ## Getting started
 
@@ -39,8 +39,8 @@ To get started, see [Golang Task Queue](https://taskq.uptrace.dev/) documentatio
 
 ```go
 import (
-    "github.com/vmihailenco/taskq/v3"
-    "github.com/vmihailenco/taskq/v3/redisq"
+    "github.com/mscienski/taskq/v3"
+    "github.com/mscienski/taskq/v3/redisq"
 )
 
 // Create a queue factory.
@@ -94,6 +94,6 @@ if err := MainQueue.Start(context.Background()); err != nil {
 
 Thanks to all the people who already contributed!
 
-<a href="https://github.com/vmihailenco/taskq/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=vmihailenco/taskq" />
+<a href="https://github.com/mscienski/taskq/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=mscienski/taskq" />
 </a>
