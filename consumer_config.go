@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/vmihailenco/taskq/v3/internal"
+	"github.com/mscienski/taskq/v3/internal"
 )
 
 const numSelectedThreshold = 20
@@ -244,11 +244,6 @@ func (r *configRoulette) genConfigs(bestCfg *consumerConfig, queueEmpty bool) {
 
 	r.oldBestCfg = bestCfg.Clone()
 	r.addConfig(r.oldBestCfg)
-
-	if !hasFreeSystemResources() {
-		internal.Logger.Println("taskq: system does not have enough free resources")
-		return
-	}
 
 	if queueEmpty {
 		r.addConfig(r.withMoreWorkers(bestCfg, 2))
